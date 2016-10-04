@@ -7,9 +7,11 @@ $(document).ready(function(){
 		counter++;
 		$(this).text(counter);
 
+		var date = new Date().toISOString();
 		var mod20 = counter%3;
 		if(mod20 == 0){
-			alert('Trouve une activité plus productive et va lire Eloquent Js');
+			alert('Tu as cliqué ' + counter + ' fois. Il est ' +
+				date + ', tu n\'as rien d\'autre à faire ?');
 		}
 	});
 
