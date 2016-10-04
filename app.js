@@ -15,10 +15,11 @@ $(document).ready(function(){
 	$('.counter span').click(function(){
 		counter++;
 		$(this).text(counter);
-		
+
 		var mod20 = counter%20;
 		if(mod20 == 0){
 			// Random number between 0 and 1
+			// ex : 0.10938289 : de type FLOAT (nombre décimal)
 			var aleatoire01 = Math.random();
 			
 			var len = messages.length;
