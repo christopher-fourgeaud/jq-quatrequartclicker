@@ -15,9 +15,8 @@ $(document).ready(function(){
 	$('.counter span').click(function(){
 		counter++;
 		$(this).text(counter);
-
-		var date = new Date().toISOString();
-		var mod20 = counter%3;
+		
+		var mod20 = counter%20;
 		if(mod20 == 0){
 			// Random number between 0 and 1
 			var aleatoire01 = Math.random();
